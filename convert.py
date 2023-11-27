@@ -12,7 +12,7 @@ out_directory = Path(r"~\Desktop").expanduser()
 text_file = out_directory / Path(output)
 
 with open(text_file, "a", encoding="utf-8") as output_file:
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe" 
+    pytesseract.pytesseract.tesseract_cmd = r" P A T H  T O  TESERECT.EXE " 
     text = str(pytesseract.image_to_string(Image.open(image_file)))
     text = text.replace("-\n", "")
     output_file.write(text)
